@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  inventorytrack:
+    image: ${DOCKER_REGISTRY-}inventorytrack
+    build:
+      context: .
+      dockerfile: InventoryTrack/Dockerfile
